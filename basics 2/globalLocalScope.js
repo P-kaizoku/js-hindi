@@ -8,13 +8,26 @@
 // c = 50
 // a = 60
 // console.log(a,c)
-{
-    let x = 10; // block scoped!!
-}
-let x  = 20;
+// {
+//     let x = 10; // block scoped!!
+// }
+// let x  = 20;
 
-{
-    var a = 10;// Not block scoped!!
+// {
+//     var a = 10;// Not block scoped!!
+// }
+// console.log(a)
+// console.log(x);
+
+//Nested scope
+
+function one(){
+    const username = "Pabitra"
+
+    function two(){
+        const website = "youtube"
+        console.log(website);
+    }
+    two();
 }
-console.log(a)
-console.log(x);
+one()
